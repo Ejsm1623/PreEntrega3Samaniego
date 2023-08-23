@@ -55,9 +55,24 @@ body {
   padding: 5px 30px;
 }
 
+
+/** Estilos para el LandingPage **/
+#landingBody {
+  background-image: url("assets/CraftMania-Background-Landingpage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landingMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Estilos de la Sección Upper*/
 
-#upper {
+.upper {
   background-image: url('https://i.ibb.co/xJ3vbbZ/sirio-hm3ef-UMo-Reg-unsplash-1.jpg');
   background-size: cover;
   height: 450px;
@@ -65,13 +80,6 @@ body {
 }
 
 .overlay {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -83,13 +91,22 @@ body {
 }
 
 .content {
-  width: 450px;
-  height: 250px;
   text-align: justify;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /** Estilos para contenido del div Media **/
+
+.media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .outer-div {
   position: relative;
@@ -121,32 +138,29 @@ body {
 
 #middle {
   background-color: white;
-  height: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  padding: 10px;
 }
 
-.serviceShortcut {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px;
-  justify-content: center;
-  align-items: center;
+/** Propiedades de los elementos ShortCut**/
+
+.servicePicture {
+  height: 300px;
+  width: 300px;
+  background-color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-bottom: 10px;
 }
 
 .servicePicture img {
-  height: 370px;
-  width: 400px;
-  margin-bottom: 20px;
-}
-
-.otherButton {
-  width: 200px;
-  height: 60px;
-  background-color: #F7C4DA;
-  color: white;
+  height: 300px;
+  width: 300px;
 }
 
 /* Estilos generales del footer */

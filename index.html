@@ -13,165 +13,183 @@
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="promotionSection">
-            <img src="./assets/icons/Delivery.png" alt="">
-            <span>Envío gratuito a partir de $40. Tiempo de entrega en 48 horas **Consultar según área de
-              entrega**</span>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/crafting.html">
-                    <img src="./assets/icons/Papel.png" alt="Papelería Creativa"> Craft's
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/sublimation.html">
-                    <img src="./assets/icons/Tinta.png" alt="Aplicación de Tinta"> Sublimación
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/vinyl.html">
-                    <img src="./assets/icons/Vinil.png" alt="Vinilos de Corte & Textiles"> Vinilos
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/delivery_points.html">
-                    <img src="./assets/icons/Location.png" alt="Ubicación"> Puntos de Entrega
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/support.html">
-                    <img src="./assets/icons/Support.png" alt="Asistencia en Línea"> Soporte
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contact.html">
-                    <img src="./assets/icons/Contacto.png" alt="Información de Contacto"> Contacto
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
+  <header class="container-fluid d-none d-lg-flex justify-content-center align-items-center" id="promotionTag">
+    <img src="./assets/icons/Delivery.png" alt="">
+    <span class="font-weight-light mb-0">Envío gratuito a partir de $40. Tiempo de entrega en 48 horas</span>
   </header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand d-lg-none" href="index.html">
+      <img src="./assets/Craft-Mania-Logo.png" alt="Logo de tu empresa" height="50" class="p-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/crafting.html">
+            <img src="./assets/icons/Papel.png" alt="Papelería Creativa"> Craft's
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/sublimation.html">
+            <img src="./assets/icons/Tinta.png" alt="Aplicación de Tinta"> Sublimación
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/vinyl.html">
+            <img src="./assets/icons/Vinil.png" alt="Vinilos de Corte & Textiles"> Vinilos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/delivery_points.html">
+            <img src="./assets/icons/Location.png" alt="Ubicación"> Puntos de Entrega
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/support.html">
+            <img src="./assets/icons/Support.png" alt="Asistencia en Línea"> Soporte
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/contact.html">
+            <img src="./assets/icons/Contacto.png" alt="Información de Contacto"> Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Contenido de la Pagina-->
+
   <main>
-    <!--Sección Inicial de la Pagina-->
-    <section class="headerSection d-flex justify-content-center align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <h1 class="mb-4">Bienvenido a CraftMania</h1>
-            <h2>Personaliza & Disfruta</h2>
-            <p>Nos apasiona dar vida a tus celebraciones de cumpleaños y eventos de una manera única y personalizada. Ya
-              sea que estés planeando una fiesta de cumpleaños, una reunión corporativa o cualquier otro evento, estamos
-              aquí para convertir tus ideas en realidad.<br><br>Explora nuestro catálogo y descubre cómo podemos hacer
-              que tu próxima celebración sea excepcional.</p>
-            <button class="btn btn-primary mt-3">Conocer más</button>
-          </div>
-          <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
-            <img src="./assets/Craft-Mania-Logo.png" alt="Logo" class="logo img-fluid">
-          </div>
+    <section class="container-fluid d-flex justify-content-center align-items-center" id="headerSection">
+      <div class="row p-5 justify-content-around">
+        <div class="col-lg-5 col-md-12">
+          <span>Bienvenido a CraftMania</span>
+          <h1 class="mb-2">Personaliza & Disfruta</h1>
+          <p>Nos apasiona dar vida a tus celebraciones de cumpleaños y eventos de una manera única y personalizada. Ya
+            sea que estés planeando una fiesta de cumpleaños, una reunión corporativa o cualquier otro evento, estamos
+            aquí para convertir tus ideas en realidad.<br><br>Explora nuestro catálogo y descubre cómo podemos hacer
+            que tu próxima celebración sea excepcional.</p>
+          <button class="btn btn-primary" id="headerBtn">Conocer más</button>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex align-items-center">
+          <img src="./assets/Craft-Mania-Logo.png" alt="Logo" class="img-fluid" id="headLogo">
         </div>
       </div>
     </section>
 
     <!--Sección Secundaria de la Pagina-->
 
-    <section class="secondSection">
-      <div class="container-fluid d-flex flex-column">
-        <div class="row"><img src="./assets/icons/PolygonForm.png" alt="Polygon" class="img-fluid"></div>
-        <div class="row mb-4 ">
-          <div class="col-lg-2 mx-5">
+    <section class="container-fluid d-flex flex-column" id="secondSection">
+      <img src="./assets/icons/PolygonForm.png" alt="Polygon" class="img-fluid" id="polygonIcon">
+      <div class="container-fluid" id="purchaseBenefits">
+        <div class="row mb-4 d-md-flex justify-content-around">
+          <div class="col-lg-3 mt-4">
             <div class="welcomeItem d-flex flex-column">
               <img src="./assets/icons/Regalo.png" alt="Icono de Regalo">
               <span>Regalo de Bienvenida</span>
             </div>
           </div>
-          <div class="col-lg-2 mx-5">
+          <div class="col-lg-3 mt-3">
             <div class="welcomeItem">
               <img src="./assets/icons/Descuento.png" alt="Icono de Descuento"><br>
               <span>Descuento de Fidelidad</span>
             </div>
           </div>
-          <div class="col-lg-2 mx-5">
+          <div class="col-lg-3 mt-3">
             <div class="welcomeItem">
               <img src="./assets/icons/Regalo.png" alt="Icono de Regalo"><br>
               <span>Item no especificado</span>
             </div>
           </div>
-          <div class="col-lg-2 mx-5">
+          <div class="col-lg-3 mt-3">
             <div class="welcomeItem">
               <img src="./assets/icons/24Horas.png" alt="Icono de 24 horas"><br>
               <span>Atención las 24 horas</span>
             </div>
           </div>
         </div>
-        <div class="row mb-5">
-          <div class="col-lg-2 mx-5">
-            <div class="showcaseItem"></div>
-          </div>
-          <div class="col-lg-2 mx-5">
-            <div class="showcaseItem"></div>
-          </div>
-          <div class="col-lg-2 mx-5">
-            <div class="showcaseItem"></div>
-          </div>
-          <div class="col-lg-2 mx-5">
-            <div class="showcaseItem"></div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section class="thirdSection">
-      <div class="container-fluid d-flex flex-column">
-        <div class="row mb-3">
-          <h2>¡La temática que tu elijas!</h2>
-          <span>Una película, un personaje de ficción o un anime. Sea lo que sea, estamos aquí para ti y
-            te<br>brindaremos
-            la personalización al 100% sea cual sea tu elección.</span>
-        </div>
-        <div class="row justify-content-around mb-5">
-          <div class="col-3">
-            <div class="themePicker"><img src="./assets/CardSample.png" alt="sample" class="img-fluid"></div>
+    <section class="mt-3" id="thirdSection">
+      <div class="row mb-4">
+        <h2 class="mb-3 text-center">¡La temática que tu elijas!</h2>
+        <span class="text-center">Una película, un personaje de ficción o un anime. Sea lo que sea, estamos aquí para ti
+          y
+          te<br>brindaremos
+          la personalización al 100% sea cual sea tu elección.</span>
+      </div>
+      <div class="container-fluid">
+        <div class="row mb-5 justify-content-lg-around justify-content-center">
+          <div class="col-12 col-md-6 d-flex justify-content-center mb-3 col-lg-2 mb-lg-0" id="themeContainer">
+            <img src="./assets/CardSample.png" alt="sample" class="img-fluid">
+            <div class="overlay">
+              <img src="./assets/Craft-Mania-Logo-Alter.png" alt="Logo" class="themeLogo">
+            </div>
           </div>
-          <div class="col-3">
-            <div class="themePicker"><img src="./assets/CardSample.png" alt="sample" class="img-fluid"></div>
+          <div class="col-12 col-6 d-flex justify-content-center mb-3 col-lg-2 mb-lg-0" id="themeContainer">
+            <img src="./assets/CardSample.png" alt="sample" class="img-fluid">
+            <div class="overlay">
+              <img src="./assets/Craft-Mania-Logo-Alter.png" alt="Logo" class="themeLogo">
+            </div>
           </div>
-          <div class="col-3">
-            <div class="themePicker"><img src="./assets/CardSample.png" alt="sample" class="img-fluid"></div>
+          <div class="col-12 col-6 d-flex justify-content-center mb-3 col-lg-2 mb-lg-0" id="themeContainer">
+            <img src="./assets/CardSample.png" alt="sample" class="img-fluid">
+            <div class="overlay">
+              <img src="./assets/Craft-Mania-Logo-Alter.png" alt="Logo" class="themeLogo">
+            </div>
           </div>
-          <div class="col-3">
-            <div class="themePicker"><img src="./assets/CardSample.png" alt="sample" class="img-fluid"></div>
+          <div class="col-12 col-6 d-flex justify-content-center mb-3 col-lg-2 mb-lg-0" id="themeContainer">
+            <img src="./assets/CardSample.png" alt="sample" class="img-fluid">
+            <div class="overlay">
+              <img src="./assets/Craft-Mania-Logo-Alter.png" alt="Logo" class="themeLogo">
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container-fluid main-footer">
-      <div class="row">
-        <div class="col-12 background"></div>
+  <footer class="container-fluid">
+    <div class="main-footer">
+      <div class="container-fluid d-flex flex-column" id="footerBody">
+        <div class="row px-5 d-flex justify-content-around mt-5">
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Redes Sociales</div>
+            <div class="sectionItem">Instagram</div>
+            <div class="sectionItem">Facebook</div>
+            <div class="sectionItem">TikTok</div>
+          </div>
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Políticas</div>
+            <div class="sectionItem">Privacidad</div>
+            <div class="sectionItem">Confidencialidad a Usuario</div>
+            <div class="sectionItem">Recursos</div>
+          </div>
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Colaboradores</div>
+            <div class="sectionItem">Emily Moran</div>
+            <div class="sectionItem">Esteban Samaniego</div>
+          </div>
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Centro de Ayuda</div>
+            <div class="sectionItem">Devoluciones & Reclamos</div>
+            <div class="sectionItem">Preguntas Frecuentes</div>
+            <div class="sectionItem">Politicas de Envio</div>
+          </div>
+        </div>
+        <div class="border-top container-fluid my-4" id="footerDivider"></div>
+        <div class="copyrigth"><span>Todas las imágenes, textos, gráficos y otros elementos de este sitio web están
+            protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual. Queda estrictamente
+            prohibida la reproducción, distribución, o modificación de cualquier parte de este sitio web sin el permiso
+            previo por escrito de CraftMania Panamá.</span></div>
       </div>
-      <div class="row">
-        <img src="./assets/Craft-Mania-Logo.png" alt="Logo" class="img-fluid footerlogo">
-      </div>
+      <img src="./assets/Craft-Mania-Logo.png" alt="Logo" class="img-fluid footerlogo">
     </div>
   </footer>
 

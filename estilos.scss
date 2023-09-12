@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+/**Las fuentes están instaladas directamente en el "head" del archivo HTML de cada sección**/
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: Inter;
+  font-size: 14;
+  font-weight: 300;
+  height: auto;
+}
+
+/** Sección de Promociones **/
+.promotionSection {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.promotionSection span {
+  color: #FCC5DA;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+/** Barra de Navegación **/
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  box-shadow: 0px 10px 25px rgba(252, 197, 218, 0.5);
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.navBar a {
+  color: #000;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* Efecto de hover */
+.navBar a:hover {
+  color: #FCC5DA;
+  /* Cambia el color del texto al pasar el mouse */
+}
+
+/** Estilos para el LandingPage **/
+#landingBody {
+  background-image: url("assets/CraftMania-Background-Landingpage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landingMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/**A partir de aquí se maneja directamente el contenido de la pagina como tal.
+Se colocará un comentario al final de esta sección para diferenciar el resto de ubicaciones semanticas.**/
+/** Estilos para First Section o Sección de Encabezado **/
+
+.headerSection {
+  background-color: white;
+  height: 450px;
+  text-align: center;
+}
+
+/*La primera sección consta de dos partes. Empezamos definiendo los estilos de la primera de ellas, 
+que sería la sección izquierda.**/
+
+.headerSection h1 {
+  color: #FCC5DA;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px !important;
+}
+
+.headerSection h2 {
+  color: #F7C4DA;
+  font-family: Muthiara -Demo Version-;
+  font-size: 48px;
+  margin-bottom: 20px !important;
+}
+
+.headerSection p {
+  text-align: justify;
+  font-family: Nunito Sans;
+  font-weight: 400;
+}
+
+/**Botón del encabezado **/
+
+.btn.btn-primary {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px 20px;
+  background: #FCC5DA;
+  color: #FFF;
+  text-align: justify;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-top: 20px !important;
+  border: none;
+}
+
+
+.btn.btn-primary:hover {
+  background-color: white;
+  color: #000;
+  border: 3px solid #FCC5DA;
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/** Estilos para la segunda sección del contenido de la pagina **/
+.secondSection .container-fluid {
+  background: linear-gradient(180deg, #FCC5DA 0%, rgba(252, 197, 218, 0.00) 100%);
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.secondSection .container-fluid img {
+  width: 125px;
+  height: 50px;
+}
+
+.welcomeItems {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.welcomeItem img {
+  height: auto;
+  max-width: 48px;
+}
+
+.welcomeItem {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  gap: 5px;
+}
+
+/** Muestrario de servicios **/
+
+.showcaseItem {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 10px 10px 20px 0px rgba(252, 197, 218, 0.80);
+}
+
+/* Tercera Sección de contenido */
+
+@keyframes destello {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.thirdSection h2 {
+  color: #FCC5DA;
+  text-align: center;
+  font-family: 'Muthiara -Demo Version-', sans-serif;
+  font-size: 64px;
+  animation: destello 2s infinite;
+}
+
+.thirdSection span {
+  color: #000;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.thirdSection .col-3 {
+  width: auto !important;
+}
+
+.themePicker,
+.themePicker img {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Estilos generales del footer */
+
+.main-footer {
+  height: 300px;
+  position: relative;
+}
+
+.background {
+  height: 300px;
+  left: 0px;
+  top: 42px;
+  position: absolute;
+  background: black;
+}
+
+.footerlogo {
+  width: 265px;
+  height: 85px;
+  left: 587px;
+  top: 0px;
+  position: absolute;
+}
+
+/* Resto de tus estilos aquí */
+
+/**Estilos para el contenido del texto **/
+
+
+/*Estilos para la Pagina Nosotros*/
+
+/* Estilos para la página Nosotros */
+.nosotros-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.mission-vision h2,
+.team h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mission-vision p,
+.team p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Estilos para la Pagina de Catalogo */
+/* Estilos para la página Catálogo */
+.catalogo-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.catalogo-container h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.product-category {
+  margin-bottom: 30px;
+}
+
+.product-category h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-category ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-category li {
+  width: 25%;
+  padding: 10px;
+}
+
+.product-category a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.product-category img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-category p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Pagina de Noticias */
+/* Estilos para la página Novedades */
+.novedades-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.novedades-container h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.news-item img {
+  width: 30%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.news-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para pagina de contacto */
+/* Estilos para la página Contáctanos */
+.contacto-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contacto-container h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contacto-container p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para el resto de la página (navbar, fondo, etc.) pueden ser definidos aquí. */
+
+
+/*# sourceMappingURL=estilos.scss.map */

@@ -127,7 +127,6 @@
 
 #headLogo {
   width: auto;
-  height: 175px;
 }
 
 /**Estilos para la segunda sección del contenido de Index**/
@@ -257,7 +256,7 @@
 .footerlogo {
   width: 265px;
   height: 85px;
-  left: 587px;
+  left: 40%;
   top: -10px;
   position: absolute;
 }
@@ -285,6 +284,53 @@
   text-align: center;
   font-family: Nunito Sans;
   font-size: 12px;
+}
+
+/**Estilos para Craft.html**/
+#craftHeader h1 {
+  color: #F7C4DA;
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/** Estilos para Proceso de pedidos **/
+.orderSection span {
+  color: #000 !important;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.orderSection h1 {
+  color: #FCC5DA;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/**Estilos y animación para elementos caja en orderprocess.html **/
+@keyframes alternarFondo {
+  0%, 100% {
+    background-image: url(./assets/firstStep.png); /* Primer fondo */
+  }
+  75% {
+    background-image: url(./assets/firstStepAlternate.png); /* Segundo fondo */
+  }
+}
+.processItem {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  animation: alternarFondo 6s ease-in-out infinite; /* Cambia cada 6 segundos (ajusta según sea necesario) */
 }
 
 /** Estilos para contact.html**/

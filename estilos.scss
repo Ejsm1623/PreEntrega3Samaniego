@@ -49,6 +49,13 @@
   transition: color 0.3s ease;
 }
 
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
 /* Efecto de hover */
 .navBar a:hover {
   color: #FCC5DA;
@@ -69,7 +76,10 @@
   align-items: center;
 }
 
-/**Encabezado o primera sección de contenido**/
+
+/**Estilos para Index.html**/
+
+/**Encabezado**/
 
 #headerSection {
   background-color: white;
@@ -112,7 +122,6 @@
   border: none;
 }
 
-
 #headerBtn:hover {
   background: white;
   color: #000;
@@ -127,7 +136,7 @@
 }
 
 
-/** Estilos para la segunda sección del contenido de la pagina **/
+/**Estilos para la segunda sección del contenido de Index**/
 
 #secondSection {
   background: linear-gradient(180deg, #FCC5DA 0%, rgba(252, 197, 218, 0.00) 100%);
@@ -166,7 +175,7 @@
 }
 
 
-/* Tercera Sección de contenido */
+/**Tercera Sección de Index.html**/
 
 @keyframes destello {
   0% {
@@ -262,14 +271,15 @@
   width: 265px;
   height: 85px;
   left: 587px;
-  top: 0px;
+  top: -10px;
   position: absolute;
 }
 
 /**Estilos para el contenido del texto **/
-.sectionContainer{
+.sectionContainer {
   gap: 10px
 }
+
 .sectionTitle {
   font-family: Nunito Sans;
   font-size: 20px;
@@ -277,215 +287,137 @@
 }
 
 .sectionItem {
-font-family: Nunito Sans;
-font-size: 14px;
-font-weight: 400;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .copyrigth {
   width: 1250px !important;
   margin: 0 auto !important;
-text-align: center;
-font-family: Nunito Sans;
-font-size: 12px;
-}
-/*Estilos para la Pagina Nosotros*/
-
-/* Estilos para la página Nosotros */
-.nosotros-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.about-us h1 {
-  color: #333;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.about-us p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.mission-vision h2,
-.team h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.mission-vision p,
-.team p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* Estilos para la Pagina de Catalogo */
-/* Estilos para la página Catálogo */
-.catalogo-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.catalogo-container h1 {
-  color: #333;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.product-category {
-  margin-bottom: 30px;
-}
-
-.product-category h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.product-category ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.product-category li {
-  width: 25%;
-  padding: 10px;
-}
-
-.product-category a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-}
-
-.product-category img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.product-category p {
-  font-size: 14px;
   text-align: center;
+  font-family: Nunito Sans;
+  font-size: 12px;
 }
 
-/* Pagina de Noticias */
-/* Estilos para la página Novedades */
-.novedades-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+/** Estilos para contact.html**/
+
+#contactHeader h1 {
+  color: #FCC5DA;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
-.novedades-container h1 {
-  color: #333;
+/**Estilos para textos a la izquierda **/
+
+.formText {
+  text-align: justify;
+}
+
+/**Estilos para contenedor padre del formulario **/
+
+.formBox {
+  background-image: url(./assets/backgroundFormulario.jpg);
+  width: 550px;
+  height: 575px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px 0px #F7C4DA;
+}
+
+/** Estilos para Input Fields de Formulario **/
+
+.formBox {
+  padding: 30px !important;
+}
+
+.formBox p {
+  padding: 10px 0px 25px 25px !important;
+  text-align: center;
+  color: white;
+}
+
+.formBox h1 {
+  text-align: center;
+  font-family: 'Nunito Sans';
+  letter-spacing: 8px;
   font-size: 32px;
-  margin-bottom: 20px;
+  font-weight: 800 !important;
 }
 
-.news-item {
-  display: flex;
-  margin-bottom: 30px;
-}
+/** Estilos para InputFields **/
 
-.news-item img {
-  width: 30%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-right: 20px;
-}
-
-.news-content {
-  flex: 1;
-}
-
-.news-content h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.news-content p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.news-content a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.news-content a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos para pagina de contacto */
-/* Estilos para la página Contáctanos */
-.contacto-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.contacto-container h1 {
-  color: #333;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.contacto-container p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.contact-form {
-  margin-top: 30px;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  color: #333;
-  font-size: 18px;
+.input-label {
+  color: #F7C4DA;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 800;
   margin-bottom: 5px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.custom-input {
+  border-bottom: 2.5px solid #F7C4DA !important;
+  padding: 5px;
+  outline: none;
+  background: none;
+  width: 100% !important;
+  color: white;
 }
 
-.contact-form textarea {
-  resize: vertical;
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Nunito Sans;
+  font-weight: 400;
 }
 
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #fff;
+.custom-textarea {
+  resize: none;
+  border-bottom: 2.5px solid #F7C4DA !important;
+  padding: 5px;
+  outline: none;
+  background: none;
+  width: 100% !important;
+  color: white;
+}
+
+.custom-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Nunito Sans;
+  font-weight: 400;
+}
+
+
+
+/**Estilos para Botón de Formulario **/
+
+#contactBtn {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px 20px;
+  background: #FCC5DA;
+  color: #FFF;
+  text-align: justify;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-top: 20px !important;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-/* Estilos adicionales para el resto de la página (navbar, fondo, etc.) pueden ser definidos aquí. */
-
+#contactBtn:hover {
+  background: none;
+  color: white;
+  border: 3px solid #FCC5DA !important;
+  transform: scale(1.05);
+}
 
 /*# sourceMappingURL=estilos.scss.map */

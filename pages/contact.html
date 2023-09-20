@@ -1,120 +1,180 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contactanos - Craftmania Panamá</title>
-  <link rel="stylesheet" href="primaryStyles.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../estilos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="CraftMania ofrece personalización única para tus celebraciones. Descubre nuestro catálogo y haz que tu próximo evento sea excepcional.">
+  <meta name="keywords" content="CraftMania, celebraciones personalizadas, eventos, catálogo">
+
+  <title>CraftMania - Personalización de Celebraciones Únicas</title>
 </head>
 
 <body>
-  <!-- Encabezado -->
-  <header>
-    <nav class="navbar">
-      <div class="navbar-Logo">
-        <a href="Inicio.html"><img src="https://i.ibb.co/8BXzN0R/Craft-Mania-Logo.png" alt="Logo CraftMania"
-            height="32"></a>
-      </div>
-      <div class="navbar-menu">
-        <ul>
-          <a href="Inicio.html">
-            <li>Inicio</li>
-          </a>
-          <a href="Nosotros.html">
-            <li>Nosotros</li>
-          </a>
-          <a href="Catalogo.html">
-            <li>Catalogo</li>
-          </a>
-          <a href="Noticias.html">
-            <li>Novedades</li>
-          </a>
-          <a href="Contacto.html">
-            <li>Contactanos</li>
-          </a>
-        </ul>
-      </div>
-      <div class="navbar-button">Registrarse</div>
-    </nav>
+  <header class="container-fluid d-none d-lg-flex justify-content-center align-items-center" id="promotionTag">
+    <img src="../assets/icons/Delivery.png" alt="">
+    <span class="font-weight-light mb-0">Envío gratuito a partir de $40. Tiempo de entrega en 48 horas</span>
   </header>
-
-  <!-- Contenido de la página "Contáctanos" -->
-  <main class="contacto-container">
-    <h1>Contáctanos</h1>
-    <p>¡Nos encantaría escucharte! Si tienes alguna pregunta, comentario o sugerencia, no dudes en ponerte en contacto
-      con nosotros mediante el formulario a continuación.</p>
-
-    <div class="contact-form">
-      <form action="enviar_formulario.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand d-lg-none" href="./index.html">
+      <img src="./assets/Craft-Mania-Logo.png" alt="Logo de tu empresa" height="50" class="p-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <img src="./assets/icons/Inicio.png" alt="Papelería Creativa">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <img src="./assets/icons/Papel.png" alt="Papelería Creativa">
+          <a class="nav-link" href="./pages/crafting.html">Craft's</a>
+        </li>
+        <li class="nav-item">
+          <img src="./assets/icons/Tinta.png" alt="Aplicación de Tinta"> 
+          <a class="nav-link" href="./pages/sublimation.html">Sublimación</a>
+        </li>
+        <li class="nav-item">
+          <img src="./assets/icons/Vinil.png" alt="Vinilos de Corte & Textiles"> 
+          <a class="nav-link" href="./pages/vinyl.html">Vinilos</a>
+        </li>
+        <li class="nav-item">
+          <img src="./assets/icons/Location.png" alt="Ubicación"> 
+          <a class="nav-link" href="./pages/delivery_points.html">Puntos de Entrega</a>
+        </li>
+        <li class="nav-item">
+          <img src="./assets/icons/Contacto.png" alt="Información de Contacto"> 
+          <a class="nav-link" href="./pages/contact.html">Contacto</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+  <!--Contenido de la Pagina-->
+
+  <main>
+    <section class="container-fluid d-flex justify-content-center align-items-center" id="contactHeader">
+      <div class="row p-5 justify-content-around align-items-center">
+        <div class="col-lg-5 col-md-12">
+          <!-- Primer elemento -->
+          <div class="row mb-3 align-items-center">
+            <div class="col-2">
+              <img src="../assets/icons/Calendario.png" alt="Icono de Calendario" class="img-fluid">
+            </div>
+            <div class="col-10 text-justify formText">
+              <p>Nuestros horarios de atención son de 10AM a 9PM de Lunes a Sábado. Llena el formulario y recibiremos tu
+                consulta, sin embargo, ten en cuenta que solo responderemos dentro de la disponibilidad definida
+                anteriormente. ¡Gracias por elegirnos!</p>
+            </div>
+          </div>
+
+          <!-- Segundo elemento -->
+          <div class="row mb-3 align-items-center">
+            <div class="col-2">
+              <img src="../assets/icons/ShieldIcon.png" alt="Icono de Calendario" class="img-fluid">
+            </div>
+            <div class="col-10 formText">
+              <p>¿A quién no le gusta expresarse? Incluso a nosotros, pero lamentablemente no podemos dar rienda
+                ilimitada a nuestras expresiones. Intenta ser concisa con respecto a tu consulta, eso nos ayudará a
+                darte la mejor atención posible.</p>
+            </div>
+          </div>
+
+          <!-- Tercer elemento -->
+          <div class="row mb-3 align-items-center">
+            <div class="col-2">
+              <img src="../assets/icons/LockIcon.png" alt="Icono de Calendario" class="img-fluid">
+            </div>
+            <div class="col-10 formText">
+              <p>Tu información está asegurada con nosotros. No debes preocuparte durante tu solicitud, pero pedimos que
+                se realice con total seriedad y respeto, pues recibirás lo mismo por parte de nuestra atención.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex align-items-center">
+          <div class="formBox align-items-center">
+            <h1 class="text-light text-uppercase">Contáctanos</h1>
+            <p>Estamos interesados en escucharte. Déjanos tus comentarios, sugerencias o solicita información por medio
+              de este formulario.</p>
+            <div class="inputField d-flex flex-column align-items-start mb-4">
+              <label for="nombreCompleto" class="input-label">Nombre Completo</label>
+              <input type="text" id="nombreCompleto" class="custom-input" placeholder="Nombre...">
+            </div>
+            <div class="inputField d-flex flex-column align-items-start mb-4">
+              <label for="correoElectronico" class="input-label">Dirección de Correo Electrónico</label>
+              <input type="text" id="correoElectronico" class="custom-input" placeholder="Email">
+            </div>
+            <div class="inputField d-flex flex-column align-items-start mb-4">
+              <label for="motivoMensaje" class="input-label">Motivo de Mensaje</label>
+              <input type="text" id="motivoMensaje" class="custom-input"
+                placeholder="¿Una sugerencia, una cotización o un simple comentario?">
+            </div>
+            <div class="inputField d-flex flex-column align-items-start mb-4">
+              <label for="descripMensaje" class="input-label">Descrpción del Mensaje</label>
+              <textarea rows="4" cols="50" class="custom-textarea" placeholder="Tu momento ha llegado. ¿Qué quieres decirnos"></textarea>
+            </div>
+            <div class="row justify-content-center"><button class="btn btn-primary formBtn"
+                id="contactBtn">¡Envíame!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <h3>Craftmania Panamá</h3>
+  <footer class="container-fluid">
+    <div class="main-footer">
+      <div class="container-fluid d-flex flex-column" id="footerBody">
+        <div class="row px-5 d-flex justify-content-around mt-5">
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Redes Sociales</div>
+            <div class="sectionItem"> <a
+                href="https://instagram.com/craftmania.pty?igshid=MzRlODBiNWFlZA==">Instagram</a> </div>
+            <div class="sectionItem"><a href="https://www.facebook.com/profile.php?id=61551363476187">Facebook</a></div>
+            <div class="sectionItem"><a href="https://www.tiktok.com/@mgcraft.pty?_t=8fmU2t6IpW9&_r=1">TikTok</a></div>
+          </div>
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Políticas</div>
+            <div class="sectionItem">Privacidad</div>
+            <div class="sectionItem">Confidencialidad a Usuario</div>
+            <div class="sectionItem">Recursos</div>
+          </div>
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Colaboradores</div>
+            <div class="sectionItem">Emily Moran</div>
+            <div class="sectionItem">Esteban Samaniego</div>
+          </div>
+          <div class="sectionContainer col-lg-2 text-light d-flex flex-column justify-content-start">
+            <div class="sectionTitle">Centro de Ayuda</div>
+            <div class="sectionItem">Devoluciones & Reclamos</div>
+            <div class="sectionItem">Preguntas Frecuentes</div>
+            <div class="sectionItem">Politicas de Envio</div>
+          </div>
+        </div>
+        <div class="border-top container-fluid my-4" id="footerDivider"></div>
+        <div class="copyrigth"><span>Todas las imágenes, textos, gráficos y otros elementos de este sitio web están
+            protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual. Queda estrictamente
+            prohibida la reproducción, distribución, o modificación de cualquier parte de este sitio web sin el permiso
+            previo por escrito de CraftMania Panamá.</span></div>
       </div>
-      <div class="footer-links">
-        <div class="footer-section">
-          <h4>Catálogo</h4>
-          <ul>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Novedades</a></li>
-            <!-- Añadir más opciones aquí -->
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Servicios</h4>
-          <ul>
-            <li><a href="#">Envíos</a></li>
-            <li><a href="#">Personalización</a></li>
-            <li><a href="#">Asesoramiento</a></li>
-            <!-- Añadir más opciones aquí -->
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Freebies</h4>
-          <ul>
-            <li><a href="#">Descargas gratuitas</a></li>
-            <li><a href="#">Muestras gratuitas</a></li>
-            <li><a href="#">Promociones</a></li>
-            <!-- Añadir más opciones aquí -->
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Nosotros</h4>
-          <ul>
-            <li><a href="#">Misión y visión</a></li>
-            <li><a href="#">Equipo</a></li>
-            <li><a href="#">Testimonios</a></li>
-            <!-- Añadir más opciones aquí -->
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Todos los derechos reservados &copy; Craftmania Panamá, 2023</p>
-      <div class="footer-legal">
-        <a href="#">Políticas de privacidad</a>
-        <a href="#">Términos y condiciones</a>
-      </div>
+      <img src="../assets/Craft-Mania-Logo.png" alt="Logo" class="img-fluid footerlogo">
     </div>
   </footer>
-</body>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

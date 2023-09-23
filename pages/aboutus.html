@@ -1,23 +1,27 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <!--Etiquetas Meta-->
+  <!-- Etiquetas Meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Enlaces a archivos locales-->
-  <link rel="stylesheet" href="main.css">
-  <!--Boostrap CSS-->
+  <meta name="description"
+    content="CraftMania - Sublimación de Prendas Textiles & Otros. Descubre nuestros servicios de sublimación, personalización de prendas y más para tus eventos especiales.">
+  <meta name="keywords" content="CraftMania, sublimación, prendas textiles, personalización, eventos">
+  <!-- Enlaces a archivos locales -->
+  <link rel="stylesheet" href="../main.css">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
   <title>CraftMania - Sublimación de Prendas Textiles & Otros</title>
 </head>
 
 <body>
+  <!-- Barra de Navegación -->
   <header class="container-fluid nav-container">
     <nav class="navbar navbar-expand-lg bg-body-ligth" id="custom-navbar">
       <a class="navbar-brand d-md-block d-lg-none" href="#">
-        <img src="./assets/logo-original.png" alt="Bootstrap" width="150">
+        <img src="../assets/logo-original.png" alt="CraftMania Logo" width="150">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,38 +29,46 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-uppercase fw-light">
-          <a class="nav-link active mx-3" aria-current="page" href="./index.html">Inicio</a>
-          <a class="nav-link mx-3" href="./pages/catalogue.html">Catalogo</a>
-          <a class="nav-link mx-3" href="./pages/about-us.html">Sobre Nosotros</a>
-          <a class="nav-link mx-3" href="./pages/order-process.html">Proceso de Compra</a>
-          <a class="nav-link mx-3" href="./pages/contact.html">Contacto</a>
+          <a class="nav-link mx-3" href="../index.html">Inicio</a>
+          <a class="nav-link mx-3" href="../pages/catalogue.html">Catalogo</a>
+          <a class="nav-link active mx-3" aria-current="page" href="../pages/about-us.html">Sobre Nosotros</a>
+          <a class="nav-link mx-3" href="../pages/orderprocess.html">Proceso de Compra</a>
+          <a class="nav-link mx-3" href="../pages/contact.html">Contacto</a>
         </ul>
       </div>
     </nav>
   </header>
 
-
+  <!-- Contenido de la Página -->
   <main>
     <section class="container-fluid d-flex justify-content-center align-items-center">
       <div class="row p-5 justify-content-around">
-        <div class="col-lg-5 col-md-12">
-          <img src="../assets/sublimationMainImage.png" alt="Sublimación de Prendas Textiles" class="w-75">
+        <div class="col-lg-6 col-md-8">
+          <img src="../assets/about-us-logo.png" alt="Sublimación de Prendas Textiles" class="rounded-3 img-fluid">
         </div>
-        <div class="col-lg-5 d-none d-lg-flex flex-column align-items-center" id="craftHeader">
-          <h1 class="mb-4">Sublimación de Prendas Textiles & Otros</h1>
-          <p><strong>¿En qué consiste la sublimación?</strong><br><br>
-            La sublimación de prendas puede varias demasiado. Puede ir desde un mousepad, hasta una prenda textil como
-            un sueter casual o deportivo, así tambien como tazas, platos y demás. La tematica como siempre queda a
-            elección de nuestros clientes y tratamos de plasmar toda su idea con la mayor precisión posible.</p>
+        <div class="col-lg-6 d-lg-flex flex-column align-items-center mt-md-5" id="craftHeader">
+          <h1 class="fw-lighter mt-3 fs-md-2 text-md-center text-center mb-lg-0">CraftMania Panamá</h1>
+          <h2 class="fs-5 text-uppercase fw-lighter text-center mb-md-3 mb-4">¿Quíenes somos?</h2>
+          <p class="about-content">CraftMania es una marca que ha resurgido. Antiguamente, llamada MGCraft, con el mismo
+            origen panameño. Actualmente, dirigida por Emily Moran, estudiante
+            de la carrera de Marketing & Publicidad Digital de la Universidad ADEN, proxima a su culminación. <br><br>Ha
+            usado su enfoque y mentalidad vendedora para colocar los cimientos
+            de este StartUp que enfoca sus esfuerzos en brindar una experiencia unica además de un resultado
+            satisfactorio en cuanto a los productos y servicios que brinda. <br><br>
+            Inicialmente llamado MGCraft, solo funcionaba en el mercado de la papeleria personalizada, pero durante su
+            proceso de re-branding ha expandido su movimiento hacia la sublimación de prendas, el uso de plotters y
+            cortes de viniles; todo para dar con la finalidad de la personalización en su maxima expresión.
+          </p>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="container-fluid d-flex flex-column" id="footer-body">
     <div class="row mb-0 p-5 d-flex flex-row align-items-center" id="footer-content">
       <div class="col-lg-3 col-md-8" id="copyrigth">
-        <div class="footer-left-section"> <img src="./assets/logo-positivo.png" alt="Craftmania Logo Versión Positiva"
+        <div class="footer-left-section"> <img src="../assets/logo-positivo.png" alt="Craftmania Logo Versión Positiva"
             class="img-fluid mb-3" id="footer-logo">
           <p class="text-light fw-light">Todas las imágenes, textos, gráficos y otros elementos de este
             sitio web están protegidos por las <strong>leyes de derechos de autor y otras leyes de propiedad
@@ -72,23 +84,22 @@
         <a href="https://www.facebook.com/profile.php?id=61551363476187" class="text-decoration-none mb-1">Facebook</a>
         <a href="https://www.tiktok.com/@mgcraft.pty?_t=8fmU2t6IpW9&_r=1" class="text-decoration-none mb-1">TikTok</a>
       </div>
-      <div class="col-lg-2 d-none d-md-none d-lg-flex  text-light d-flex flex-column justify-content-start">
+      <div class="col-lg-2 d-none d-md-none d-lg-flex text-light d-flex flex-column justify-content-start">
         <span class="mb-2 fw-bold fs-5">Enlaces</span>
         <a href="" class="text-decoration-none mb-1">Catalogo</a>
         <a href="" class="text-decoration-none mb-1">Pedidos</a>
         <a href="" class="text-decoration-none mb-1">Enlace 3</a>
-
       </div>
       <div class="col-lg-2 d-none d-md-none d-lg-flex text-light d-flex flex-column justify-content-start">
         <span class="mb-2 fw-bold fs-5">Contacto</span>
         <a href="" class="text-decoration-none mb-1">Whatsapp</a>
         <a href="" class="text-decoration-none mb-1">Correo electronico</a>
         <a href="" class="text-decoration-none mb-1">Pedidos</a>
-
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

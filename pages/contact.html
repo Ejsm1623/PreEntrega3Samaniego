@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Enlaces a archivos locales-->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../main.css">
   <!--Boostrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,7 +18,7 @@
   <header class="container-fluid nav-container">
     <nav class="navbar navbar-expand-lg bg-body-ligth" id="custom-navbar">
       <a class="navbar-brand d-md-block d-lg-none" href="#">
-        <img src="./assets/logo-original.png" alt="Bootstrap" width="150">
+        <img src="../assets/logo-original.png" alt="Bootstrap" width="150">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +26,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-uppercase fw-light">
-          <a class="nav-link active mx-3" aria-current="page" href="./index.html">Inicio</a>
-          <a class="nav-link mx-3" href="./pages/catalogue.html">Catalogo</a>
-          <a class="nav-link mx-3" href="./pages/about-us.html">Sobre Nosotros</a>
-          <a class="nav-link mx-3" href="./pages/order-process.html">Proceso de Compra</a>
-          <a class="nav-link mx-3" href="./pages/contact.html">Contacto</a>
+          <a class="nav-link active mx-3" aria-current="page" href="../index.html">Inicio</a>
+          <a class="nav-link mx-3" href="../pages/catalogue.html">Catalogo</a>
+          <a class="nav-link mx-3" href="../pages/about-us.html">Sobre Nosotros</a>
+          <a class="nav-link mx-3" href="../pages/order-process.html">Proceso de Compra</a>
+          <a class="nav-link mx-3" href="../pages/contact.html">Contacto</a>
         </ul>
       </div>
     </nav>
@@ -39,75 +39,56 @@
   <!--Contenido de la Pagina-->
 
   <main>
-    <section class="container-fluid d-flex justify-content-center align-items-center" id="contactHeader">
-      <div class="row p-5 justify-content-around align-items-center">
-        <div class="col-lg-5 d-md-none d-lg-block">
-          <div class="row mb-3 align-items-center">
-            <div class="col-2">
-              <img src="../assets/icons/Calendario.png" alt="Icono de Calendario" class="img-fluid">
-            </div>
-            <div class="col-10 text-justify formText">
-              <p>Nuestros horarios de atención son de 10AM a 9PM de Lunes a Sábado. Llena el formulario y recibiremos tu
-                consulta, sin embargo, ten en cuenta que solo responderemos dentro de la disponibilidad definida
-                anteriormente. ¡Gracias por elegirnos!</p>
-            </div>
-          </div>
-          <div class="row mb-3 align-items-center">
-            <div class="col-2">
-              <img src="../assets/icons/ShieldIcon.png" alt="Icono de Calendario" class="img-fluid">
-            </div>
-            <div class="col-10 formText">
-              <p>¿A quién no le gusta expresarse? Incluso a nosotros, pero lamentablemente no podemos dar rienda
-                ilimitada a nuestras expresiones. Intenta ser concisa con respecto a tu consulta, eso nos ayudará a
-                darte la mejor atención posible.</p>
-            </div>
-          </div>
-          <div class="row mb-3 align-items-center">
-            <div class="col-2">
-              <img src="../assets/icons/LockIcon.png" alt="Icono de Calendario" class="img-fluid">
-            </div>
-            <div class="col-10 formText">
-              <p>Tu información está asegurada con nosotros. No debes preocuparte durante tu solicitud, pero pedimos que
-                se realice con total seriedad y respeto, pues recibirás lo mismo por parte de nuestra atención.</p>
-            </div>
-          </div>
+    <section class="container-fluid p-3 p-md-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Contáctanos</h1>
+          <p>Estamos interesados en escucharte. Déjanos tus comentarios, sugerencias o solicita información por medio de este formulario</p>
         </div>
-        <div class="col-lg-5 d-md-flex d-lg-flex align-items-center">
-          <div class="formBox align-items-center">
-            <h1 class="text-light text-uppercase">Contáctanos</h1>
-            <p>Estamos interesados en escucharte. Déjanos tus comentarios, sugerencias o solicita información por medio
-              de este formulario.</p>
-            <div class="inputField d-flex flex-column align-items-start mb-4">
-              <label for="nombreCompleto" class="input-label">Nombre Completo</label>
-              <input type="text" id="nombreCompleto" class="custom-input" placeholder="Nombre...">
-            </div>
-            <div class="inputField d-flex flex-column align-items-start mb-4">
-              <label for="correoElectronico" class="input-label">Dirección de Correo Electrónico</label>
-              <input type="text" id="correoElectronico" class="custom-input" placeholder="Email">
-            </div>
-            <div class="inputField d-flex flex-column align-items-start mb-4">
-              <label for="motivoMensaje" class="input-label">Motivo de Mensaje</label>
-              <input type="text" id="motivoMensaje" class="custom-input"
-                placeholder="¿Una sugerencia, una cotización o un simple comentario?">
-            </div>
-            <div class="inputField d-flex flex-column align-items-start mb-4">
-              <label for="descripMensaje" class="input-label">Descrpción del Mensaje</label>
-              <textarea rows="4" cols="50" class="custom-textarea"
-                placeholder="Tu momento ha llegado. ¿Qué quieres decirnos"></textarea>
-              <div class="row justify-content-center container-fluid"><button class="btn btn-primary formBtn"
-                  id="contactBtn">¡Envíame!</button>
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto mt-4">
+          <!-- Formulario -->
+          <div class="container-fluid px-4">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="inputField">
+                  <label for="nombreCompleto" class="input-label">Nombre Completo</label>
+                  <input type="text" id="nombreCompleto" class="form-control" placeholder="Nombre...">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="inputField">
+                  <label for="correoElectronico" class="input-label">Dirección de Correo Electrónico</label>
+                  <input type="text" id="correoElectronico" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="inputField">
+                  <label for="motivoMensaje" class="input-label">Motivo de Mensaje</label>
+                  <input type="text" id="motivoMensaje" class="form-control" placeholder="¿Una sugerencia, una cotización o un simple comentario?">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="inputField">
+                  <label for="descripMensaje" class="input-label">Descripción del Mensaje</label>
+                  <textarea rows="4" class="form-control" placeholder="Tu momento ha llegado. ¿Qué quieres decirnos"></textarea>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-primary formBtn fw-bold text-uppercase" id="contactBtn">¡Envíame!</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+
   </main>
 
   <footer class="container-fluid d-flex flex-column" id="footer-body">
     <div class="row mb-0 p-5 d-flex flex-row align-items-center" id="footer-content">
       <div class="col-lg-3 col-md-8" id="copyrigth">
-        <div class="footer-left-section"> <img src="./assets/logo-positivo.png" alt="Craftmania Logo Versión Positiva"
+        <div class="footer-left-section"> <img src="../assets/logo-positivo.png" alt="Craftmania Logo Versión Positiva"
             class="img-fluid mb-3" id="footer-logo">
           <p class="text-light fw-light">Todas las imágenes, textos, gráficos y otros elementos de este
             sitio web están protegidos por las <strong>leyes de derechos de autor y otras leyes de propiedad

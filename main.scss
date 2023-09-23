@@ -15,6 +15,12 @@ de dicha pagina. De manera interna, se encontrarán comentarios que especifican 
 en dado caso, su funcionamiento o especificaciones adicionales.-----*/
 
 /*---------------Elementos Globales----------------*/
+h1 {
+  color: #FCC5DA !important;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: lighter !important;
+}
 
 /**Media Queries**/
 @media (max-width: 576px) {
@@ -26,8 +32,10 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
 }
 
 /*-----Barra de Navegación----*/
+
 #custom-navbar .nav-link:hover,
-#custom-navbar .nav-link.active, .nav-item {
+#custom-navbar .nav-link.active,
+.nav-item {
   color: #F7C4DA !important;
 }
 
@@ -50,11 +58,6 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
 
 /**Sección del Encabezado **/
 
-#introduction h1 {
-  color: #FCC5DA;
-  letter-spacing: 4px;
-}
-
 #introduction p {
   text-align: justify;
 }
@@ -75,72 +78,32 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
   }
 }
 
+/**Estilos para sección de beneficios con iconos **/
 
-
-/**Estilos para sección de benefits **/
-
-#benefits {
-  height: 150px;
-  display: flex;
-  align-items: center;
-}
-
-#benefit-content {
-  text-align: center;
-  justify-content: space-evenly !important;
-}
-
-@media (max-width:576px) {
-  #benefit-content {
-    gap: 100px;
-  }
-}
-
-#polygon-icon {
-  width: 125px;
-  height: 50px;
+i {
+  color: #F7C4DA;
+  font-size: 50px !important;
 }
 
 /**MediaQuery para controlar tamaño de fuente y de iconos **/
-
-@media (max-width:576px) {
-  #benefit-icon {
-    width: 35px !important;
+@media (max-width: 796px) {
+  i {
+    font-size: 50px !important;
   }
-
-  ;
-
-  #benefits span {
-    font-size: 13px !important;
-  }
+.benefit-title {
+  font-size: 18px !important;
+}
+.benefit-text {
+  font-size: 16px !important;
 }
 
-/**Tercera Sección de Index.html**/
-/** Estilos correspondiente a las cartas de servicios **/
-
-#service-shortcut h2 {
-  color: #FCC5DA;
-  letter-spacing: 5px;
-  font-family: 'Nunito Sans';
-}
-
-#service-shortcut span {
-  text-align: justify;
-}
-
-#service-card-showcase {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.card-text {
-  text-align: justify;
-  font-size: 14px;
 }
 
 
-@media (max-width: 768px) {}
+/**Estilos para About Us **/
+.about-content {
+  text-align: justify !important;
+}
 
 /* Estilos generales del footer */
 
@@ -170,64 +133,6 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
     font-size: 12px !important;
   }
 }
-
-/**Estilos para Craft.html**/
-
-#craftHeader h1 {
-  color: #F7C4DA;
-  font-family: Nunito Sans;
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
-
-/** Estilos para Proceso de pedidos **/
-
-.orderSection span {
-  color: #000 !important;
-  text-align: center;
-  font-family: Nunito Sans;
-  font-size: 14px;
-  font-weight: 200;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.orderSection h1 {
-  color: #FCC5DA;
-  text-align: center;
-  font-family: Nunito Sans;
-  font-size: 32px;
-  font-weight: 400;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
-
-/**Estilos y animación para elementos caja en orderprocess.html **/
-
-@keyframes alternarFondo {
-
-  0%,
-  100% {
-    background-image: url(./assets/firstStep.png);
-    /* Primer fondo */
-  }
-
-  75% {
-    background-image: url(./assets/firstStepAlternate.png);
-    /* Segundo fondo */
-  }
-}
-
-.processItem {
-  width: 250px;
-  height: 250px;
-  border-radius: 15px;
-  animation: alternarFondo 6s ease-in-out infinite;
-  /* Cambia cada 6 segundos (ajusta según sea necesario) */
-}
-
 
 /** Estilos para contact.html**/
 
@@ -259,26 +164,6 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
   box-shadow: 10px 10px 0px 0px #F7C4DA;
 }
 
-/** Estilos para Input Fields de Formulario **/
-
-.formBox {
-  padding: 30px !important;
-}
-
-.formBox p {
-  padding: 10px 0px 25px 25px !important;
-  text-align: center;
-  color: white;
-}
-
-.formBox h1 {
-  text-align: center;
-  font-family: 'Nunito Sans';
-  letter-spacing: 8px;
-  font-size: 32px;
-  font-weight: 800 !important;
-}
-
 /** Estilos para InputFields **/
 
 .input-label {
@@ -291,6 +176,7 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
 }
 
 .custom-input {
+  border: none;
   border-bottom: 2.5px solid #F7C4DA !important;
   padding: 5px;
   outline: none;
@@ -307,6 +193,7 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
 
 .custom-textarea {
   resize: none;
+  border: none;
   border-bottom: 2.5px solid #F7C4DA !important;
   padding: 5px;
   outline: none;
@@ -328,15 +215,8 @@ en dado caso, su funcionamiento o especificaciones adicionales.-----*/
   height: 40px;
   border-radius: 5px 20px;
   background: #FCC5DA;
-  color: #FFF;
-  text-align: justify;
-  font-family: Work Sans;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  margin: 20px !important;
+  letter-spacing: 1px;
   border: none;
 }
 

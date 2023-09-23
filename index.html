@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <!----------Encabezado, otros & Barra de Navegación---------->
 
   <header class="container-fluid nav-container">
@@ -29,10 +28,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-uppercase fw-light">
-          <a class="nav-link active mx-3" aria-current="page" href="./index.html">Inicio</a>
+          <a class="nav-link active mx-3" aria-current="page" href="index.html">Inicio</a>
           <a class="nav-link mx-3" href="./pages/catalogue.html">Catalogo</a>
-          <a class="nav-link mx-3" href="./pages/about-us.html">Sobre Nosotros</a>
-          <a class="nav-link mx-3" href="./pages/order-process.html">Proceso de Compra</a>
+          <a class="nav-link mx-3" href="./pages/aboutus.html">Sobre Nosotros</a>
+          <a class="nav-link mx-3" href="./pages/orderprocess.html">Proceso de Compra</a>
           <a class="nav-link mx-3" href="./pages/contact.html">Contacto</a>
         </ul>
       </div>
@@ -61,131 +60,41 @@
         </div>
       </div>
     </section>
-
-    <!-----------Slider--------->
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="./assets/slide1.jpg" class="d-block w-100" alt="Cameo Corte de Vinil">
-        </div>
-
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="./assets/slide2.jpg" class="d-block w-100" alt="Sublimación Planchado Textil de Viniles">
-        </div>
-
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="./assets/slide3.jpg" class="d-block w-100" alt="Viniles EasyWeed">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     <!--Sección Secundaria de la Pagina-->
 
-    <section class="container-fluid d-flex flex-column" id="benefits">
-      <div class="row mt-5 d-flex flex-row" id="benefit-content">
-        <div class=" col-5 col-lg-2 d-flex flex-column align-items-center">
-          <img src="./assets/icons/Regalo.png" alt="Icono de Beneficio de Regalo" class="mb-0 mb-lg-2 img-fluid"
-            id="benefit-icon">
-          <span class="fs-6 ">Regalo de Bienvenida</span>
+    <section class="container-fluid d-flex flex-column">
+      <div class="row d-flex flex-row justify-content-md-center justify-content-sm-center text-center mx-auto"
+        id="benefits">
+        <div class="col col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+            <i class="bi bi-box2-heart mx-4"></i>
+            <div class="d-flex flex-column text-start fs-5">
+              <span class="fw-bold benefit-title">Regalo de Bienvenida</span>
+              <span class="benefit-text">Un pequeño incentivo por tu primera compra.</span>
+            </div>
+          </div>
         </div>
-        <div class="col-5 col-lg-2 d-flex flex-column align-items-center">
-          <img src="./assets/icons/Descuento.png" alt="Icono de Descuento" class="img-fluid mb-0 mb-lg-2"
-            id="benefit-icon">
-          <span class="fs-6 text-center">Descuento de Fidelidad</span>
+        <div class="col col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+            <i class="bi bi-bag-heart mx-4"></i>
+            <div class="d-flex flex-column text-start fs-5">
+              <span class="fw-bold benefit-title">Descuentos de fidelidad</span>
+              <span class="benefit-text">Realiza varias compras y obtén un descuento.</span>
+            </div>
+          </div>
         </div>
-        <div class="col-5 col-lg-2 d-flex flex-column align-items-center mt-4 mt-lg-0">
-          <img src="./assets/icons/Regalo.png" alt="Icono de Regalo" class="img-fluid mb-0 mb-lg-2" id="benefit-icon">
-          <span class="fs-6 text-center">Item no especificado</span>
-        </div>
-        <div class="col-5 col-lg-2 d-flex flex-column align-items-center mt-4 mt-lg-0">
-          <img src="./assets/icons/24Horas.png" alt="Icono de 24 horas" class="img-fluid mb-0 mb-lg-2"
-            id="benefit-icon">
-          <span class="fs-6 text-center">Atención las 24 horas</span>
+        <div class="col col-md-6 col-lg-4">
+          <div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+            <i class="bi bi-chat-heart mx-4"></i>
+            <div class="d-flex flex-column text-start fs-5">
+              <span class="fw-bold benefit-title">Atención 24/7</span>
+              <span class="benefit-text">Rapida atención en el menor tiempo.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="container-fluid d-flex flex-column mt-5" id="service-shortcut">
-      <div class="row mb-4">
-        <div class="col-12 mx-auto d-flex flex-column mb-4">
-          <h2 class="fs-1 text-uppercase fw-bold text-center mb-0 mt-4">¿Por qué elegir a CraftMania?</h2>
-          <span class="fw-semibold text-uppercase text-center mb-4">Esa es una muy buena pregunta. Y aquí te damos
-            respuesta...</span>
-          <span class="px-5 mx-auto"> En <strong>CraftMania</strong> volcamos nuestros esfuerzo a que la personalización
-            cumpla con las
-            expectativas de nuestros clientes y si es posible, que sean superadas con creces. En esta sección podrás
-            observar 4 cartas que representan <strong>los pilares de CraftMania como StartUp Panameño.</strong> Desde
-            CraftMania queremos
-            involucrar al cliente en la totalidad del proceso creativo para darle una experiencia unica y no simplemente
-            una entrega rápida como muchas otras marcas.
-            <br><br>
-            Haciendo clic en cualquiera de las 4 tarjetas, serás enviado a nuestro <a
-              href="./pages/crafting.html">catalogo</a>. Donde posteriormente, podrás
-            revisar a fondo nuestros más recientes trabajos y tomar la decisión de <a
-              href="./pages/contact.html">contactarnos</a> para cotizar en tu proximo
-            evento. <span class="fw-semibold">¿Qué esperas? Lanzate a la experiencia maniaca de CraftMania.</span>
-          </span>
-        </div>
-      </div>
-      <div class="row px-5" id="service-card-showcase">
-        <div class="col-lg-4 col-10 mx-auto mb-md-4">
-          <div class="card" id="service-card">
-            <img src="./assets/sublimateCardImage.png" class="card-img-top w-lg-100"
-              alt="Imagen Demostrativa para Sublimación">
-            <div class="card-body">
-              <h5 class="card-title text-center fw-semibold text-primary">Sublimación</h5>
-              <p class="card-text"><strong>¡Planchar Planchar!</strong> Con brillo, mate, texturizado, con relieve,
-                pelusa o cómo quieras
-                llamarlo. Varios tipos de vinilos y diseños en tintas de sublimación, DTF y demás esperando a ser
-                aplicados en tus prendas textiles y demás.</p>
-              <a href="#" class="btn btn-primary w-100">¡Sublimame!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-10 mx-auto mb-md-4">
-          <div class="card">
-            <img src="./assets/cuttingCardImage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-10 mx-auto mb-md-4">
-          <div class="card">
-            <img src="./assets/sublimateCardImage.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fw-semibold text-primary">¿Quíen no ama los Stickers?</h5>
-              <p class="card-text">Ofrecemos de manera individual servicios de corte con plotter de la marca Cameo. Ya
-                sea para una calcomanía sencilla o un nombre más complicado, incluso una decoración pequeña en algún
-                material como el cartón, cartulinas y demás.</p>
-              <a href="#" class="btn btn-primary w-100">¡I love Stickers!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="container-fluid d-flex flex-column" id="footer-body">

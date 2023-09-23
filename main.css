@@ -87,6 +87,11 @@ i {
     font-size: 16px !important;
   }
 }
+/**Estilos para Proceso de Compra **/
+.step-content {
+  text-align: justify;
+}
+
 /**Estilos para About Us **/
 .about-content {
   text-align: justify !important;
